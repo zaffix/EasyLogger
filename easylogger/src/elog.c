@@ -205,8 +205,8 @@ ElogErrCode elog_init(void) {
  *
  */
 void elog_deinit(void) {
-    extern ElogErrCode elog_port_deinit(void);
-    extern ElogErrCode elog_async_deinit(void);
+    extern void elog_port_deinit(void);
+    extern void elog_async_deinit(void);
 
     if (!elog.init_ok) {
         return ;
